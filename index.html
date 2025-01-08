@@ -3,43 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md Sahin Siraj</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Left Section -->
-    <div class="left">
-      <h1>Md Sahin Siraj</h1>
-      <p>Skills:</p>
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>Your Name</h1>
       <ul>
-        <li>Web Development</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </div>
+    </nav>
+  </header>
 
-    <!-- Right Section -->
-    <div class="right">
-      <img src="assets/sahinsiraj.jpg" alt="Your Image">
-    </div>
-  </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Showcasing my work and passion for development.</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
 
-  <!-- Social Links Section -->
-  <footer>
+  <!-- Portfolio Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-gallery">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>Short description of the project.</p>
+      </div>
+      <!-- Add more project cards -->
+    </div>
+  </section>
+
+  <!-- GitHub Repositories Section -->
+  <section id="github">
+    <h2>GitHub Repositories</h2>
+    <div id="repos"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>A brief introduction about yourself, your skills, and goals.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
     <div class="social-links">
-      <a href="https://github.com/sahin-dev" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/sahinsiraj" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://twitter.com/your-username" target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
+      <a href="https://github.com/sahin-dev" target="_blank">GitHub</a>
+      <!-- Add other social links -->
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
